@@ -12,6 +12,8 @@ module github.com/hashicorp/vault
 // Whenever this value gets updated, sdk/go.mod should be updated to the same value.
 go 1.20
 
+replace go.etcd.io/bbolt => github.com/haraldh/bbolt v0.0.0-20230629120005-6edf7e383aeb
+
 replace github.com/hashicorp/vault/api => ./api
 
 replace github.com/hashicorp/vault/api/auth/approle => ./api/auth/approle
